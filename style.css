@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.content {
+    background-image: url(images/survey.jpeg), linear-gradient(rgba(39, 78, 185, 0.8), rgba(21, 96, 209, 0.8));
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    height: 100%;
+    background-size: cover;
+    background-blend-mode: overlay;
+    padding-bottom: 0.5em;
+    background-position: center;
+    position: fixed;
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 20em;
+}
+
+.wrapper {
+    background-color: rgba(3, 3, 15, 0.8);
+    width: 700px;
+    margin: 1em auto;
+    padding: 2em 3em;
+    border-radius: 3px;
+}
+
+.content header {
+    text-align: center;
+    padding: 3em 0 1em 0;
+}
+
+header h1 {
+    color: white;
+    font-weight: lighter;
+    line-height: 2em;
+}
+
+header p {
+    font-size: 19px;
+    padding: 0 4em;
+    color: rgb(226, 214, 159);
+    font-family: monospace
+}
+
+input[type=text],
+input[type=email] {
+    width: 100%;
+    padding: 12px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin: 7px 0 10px 0;
+}
+
+label {
+    color: white;
+    font-weight: 20em;
+    font-size: 1.2em;
+}
+
+small {
+    font-weight: lighter;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin: 7px 0 10px 0;
+    columns: white;
+    font-size: 17px;
+    color: rgb(112, 108, 108);
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    display: inline-block;
+    border: none;
+    margin: 7px 0 10px 0;
+}
+
+input::placeholder {
+    font-size: 17px;
+}
+
+p {
+    font-size: 20px;
+    color: white;
+    padding: .6em 0;
+}
+
+.radio {
+    padding: .5em 0;
+}
+
+.checkbox {
+    padding: .7em 0 .5em 0;
+}
+
+.footer input {
+    background-color: #69da5d;
+    border-radius: 3px;
+    width: 100%;
+    padding: 13px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    margin: 7px 0 10px 0;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        width: 500px;
+        padding: 2em 2em;
+    }
+    header p {
+        font-size: 19px;
+        padding: 0 1em;
+    }
+}
