@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Survey Form</title>
 </head>
 
@@ -18,18 +19,18 @@
             <form>
                 <div class="user">
                     <label for="name">Name</label><br>
-                    <input type="text" placeholder="Enter your name" required id="name"><br><br>
+                    <input type="text" placeholder="Enter your name" required id="name" autocomplete="off"><br><br>
                     <label for="email">Email</label><br>
-                    <input type="email" id="email" placeholder="Enter your email" required><br>
+                    <input type="email" id="email" placeholder="Enter your email" required autocomplete="off"><br>
                     <br>
                     <label for="age">Age</label>
-                    <input type="text" placeholder="Age" required id="age">
+                    <input type="number" placeholder="Age" required id="age" autocomplete="off">
                 </div>
 
                 <div class="user-select">
                     <p>Which option best describes your current role?</p>
                     <select name="user-input " id="user-input ">
-                        <option value="0ne ">Select current role</option>
+                        <option value="" disabled selected>Select current role</option>
                         <option value="two ">Student</option>
                         <option value="three ">Full time job</option>
                         <option value="four ">Full time learner</option>
@@ -39,11 +40,11 @@
                 </div>
                 <div class="radio">
                     <p>Would you recommend freeCodeCamp to a friend?</p>
-                    <input type="radio" id="male" name="gender" value="male">
+                    <input type="radio" id="male" name="gender" value="male" class="w3-radio">
                     <label for="male">Definitely</label><br><br>
-                    <input type="radio" id="female" name="gender" value="female">
+                    <input type="radio" id="female" name="gender" value="female" class="w3-radio">
                     <label for="female">Maybe</label><br><br>
-                    <input type="radio" id="other" name="gender" value="other">
+                    <input type="radio" id="other" name="gender" value="other" class="w3-radio">
                     <label for="other">Not sure</label>
                 </div>
                 <div class="user-select-2">
@@ -60,27 +61,27 @@
                 <div class="checkbox">
                     <p>What Would you like to see improved? <small>(Check all that apply)</small></p>
 
-                    <input type="checkbox" id="1">
+                    <input type="checkbox" id="1" class="w3-radio">
                     <label for="1">Front-end Projects</label><br><br>
-                    <input type="checkbox" id="2">
+                    <input type="checkbox" id="2" class="w3-radio">
                     <label for="2">Back-end Projects</label><br><br>
-                    <input type="checkbox" id="3">
+                    <input type="checkbox" id="3" class="w3-radio">
                     <label for="3">Data Visualization</label><br><br>
-                    <input type="checkbox" id="4">
+                    <input type="checkbox" id="4" class="w3-radio">
                     <label for="4">Challenges</label><br><br>
-                    <input type="checkbox" id="5">
+                    <input type="checkbox" id="5" class="w3-radio">
                     <label for="5">Open Source Community</label><br><br>
-                    <input type="checkbox" id="6">
+                    <input type="checkbox" id="6" class="w3-radio">
                     <label for="6">Gitter help rooms</label><br><br>
-                    <input type="checkbox" id="7">
+                    <input type="checkbox" id="7" class="w3-radio">
                     <label for="7">Videos</label><br><br>
-                    <input type="checkbox" id="8">
+                    <input type="checkbox" id="8" class="w3-radio">
                     <label for="8">City Meetups</label><br><br>
-                    <input type="checkbox" id="9">
+                    <input type="checkbox" id="9" class="w3-radio">
                     <label for="9">Wiki</label><br><br>
-                    <input type="checkbox" id="10">
+                    <input type="checkbox" id="10" class="w3-radio">
                     <label for="10">Forum</label><br><br>
-                    <input type="checkbox" id="11">
+                    <input type="checkbox" id="11" class="w3-radio">
                     <label for="11">Additional Courses</label>
 
                 </div>
